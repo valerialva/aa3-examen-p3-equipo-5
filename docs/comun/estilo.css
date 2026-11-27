@@ -1,0 +1,26 @@
+/* Estilo común de las páginas de la S2 (IN1042): mismos colores que las presentaciones del curso. */
+:root { --navy: #1B1F3B; --navy2: #2C3160; --coral: #E4572E; --teal: #17BEBB; --gris: #5B6178; --claro: #F1F3F8; --palido: #C9CCE0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--navy); background: var(--claro); }
+header { background: var(--navy); color: #fff; padding: 18px 16px 14px; }
+header .etq { color: var(--teal); font-weight: 700; letter-spacing: .06em; font-size: 12px; margin: 0 0 6px; }
+header h1 { font-size: 22px; margin: 0 0 6px; }
+header .sub { color: var(--palido); margin: 0; font-size: 14px; }
+.tarjeta { background: #fff; margin: 12px; padding: 12px 14px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.tarjeta h2 { font-size: 17px; margin: 0 0 10px; color: var(--navy2); }
+.aviso { background: #FDECE7; }
+button, .boton, select { font: inherit; font-size: 15px; padding: 9px 12px; margin: 4px 6px 4px 0; border-radius: 9px; border: 0; }
+button, .boton { background: var(--navy); color: #fff; cursor: pointer; display: inline-block; }
+button:disabled { background: var(--palido); cursor: default; }
+button.sec { background: var(--claro); color: var(--navy); border: 1px solid var(--palido); }
+select { border: 1px solid var(--palido); background: #fff; }
+canvas { display: block; margin: 10px auto; max-width: 100%; border-radius: 8px; border: 1px solid var(--palido); background: #000; }
+.estado { color: var(--gris); font-size: 14px; }
+.nota { color: var(--gris); font-size: 13px; }
+.resultado { font-size: 20px; font-weight: 700; padding: 10px; border-radius: 9px; background: var(--claro); text-align: center; }
+.resultado.alerta { background: var(--coral); color: #fff; }
+.resultado.ok { background: var(--teal); color: #fff; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+th, td { text-align: left; padding: 5px 6px; border-bottom: 1px solid var(--palido); }
+th { background: var(--navy); color: #fff; font-weight: 600; }
+.botones { display: flex; flex-wrap: wrap; align-items: center; }

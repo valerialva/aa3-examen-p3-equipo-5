@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CardioRitmo Wearable · Latidos en el celular</title>
+<link rel="stylesheet" href="../comun/estilo.css">
+</head>
+<body>
+<header>
+  <p class="etq">IN1042 · PARCIAL III · EXAMEN · PROBLEMA 1</p>
+  <h1>CardioRitmo Wearable: latidos en el celular</h1>
+  <p class="sub">El modelo más pequeño que encontró el equipo, en ONNX, clasificando latidos <b>dentro de este teléfono</b>.</p>
+</header>
+
+<section class="tarjeta">
+  <h2>1 · El modelo</h2>
+  <label for="selModelo">Versión:</label>
+  <select id="selModelo"></select>
+  <button id="btnCargar">Cargar modelo</button>
+  <p id="estadoModelo" class="estado">Sin cargar.</p>
+</section>
+
+<section class="tarjeta">
+  <h2>2 · Un latido de la prueba</h2>
+  <button id="btnAzar" disabled>🎲 Latido al azar</button>
+  <canvas id="lienzo" width="600" height="220" style="background:#fff"></canvas>
+  <div id="resultado" class="resultado">—</div>
+</section>
+
+<section class="tarjeta">
+  <h2>3 · Todos los latidos de prueba incluidos</h2>
+  <button id="btnTodos" disabled>Clasificar todos y medir</button>
+  <table id="tablaTodos"></table>
+</section>
+
+<section class="tarjeta aviso">
+  <p><b>Aviso:</b> ECG5000 es de un solo paciente. Herramienta de clase, <b>no es un diagnóstico</b>.</p>
+  <p id="dispositivo" class="nota"></p>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.20.1/dist/ort.min.js"></script>
+<script src="../comun/comun.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
